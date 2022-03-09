@@ -8,3 +8,11 @@ class AnimaisTestCase(LiveServerTestCase):
 
     def tearDown(self):
         self.browser.quit()
+
+    def test_abre_janela_do_chrome(self):
+        self.browser.get(self.live_server_url)
+
+    def test_exemplo_de_erro(self):
+        '''Teste de exemplo de falha.'''
+        self.fail()
+
